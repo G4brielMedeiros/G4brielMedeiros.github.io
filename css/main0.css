@@ -1,0 +1,207 @@
+*{
+	margin		: 0;
+	padding		: 0;
+	font-family	: Tahoma;
+}
+
+h1{
+	font: bold 40px Tahoma;
+}
+
+h2{
+	font				: bold 25px Tahoma;
+	margin-bottom		: 20px;
+	color				: #E27D60;
+	-webkit-transition	: -webkit-transform .2s;
+	text-align			: center;
+}
+
+h2:hover{
+	-webkit-transform: scale(1.1);
+}
+
+h3{
+	font		: bold 15px Tahoma;
+}
+
+header, section, footer, aside, nav, article, hgroup, img{
+	display : block;
+}
+
+img{
+	margin			: auto;
+	margin-top		: 30px;
+	margin-bottom	: 30px;
+	border-radius	:  5px;
+	width			: 80%;
+
+}
+body{
+	width			: 100%;
+	display			: -webkit-box;
+	-webkit-box-pack: center;
+	
+	background-image:url(../images/homepage/beige-tiles.png);
+	
+	background-color: #85D0CB;
+	
+}
+
+#big_wrapper{
+	max-width			: 1200px;
+	margin				: 20px 0px;
+	-webkit-box-orient	: vertical;
+	-webkit-box-flex	: 1;
+	
+}
+
+#top_header{
+	background	: #E27D60;
+	padding		: 20px;
+	border-top-left-radius		: 5px;
+	border-top-right-radius		: 5px;
+}
+
+
+#top_menu{
+	background	: #E8A87C;
+	padding		: px;
+	color		: black;
+	border-bottom-left-radius		: 5px;
+	border-bottom-right-radius		: 5px;
+}
+
+#top_menu li{
+	display		: inline-block;
+	list-style	: none;
+}
+
+
+li a{
+	display		: inline-block;
+	padding		: 10px;
+	color		: black;
+	font-weight	: bold;
+}
+
+#about {
+	border-bottom-left-radius	: 5px;
+}
+#new_div{
+	display				: -webkit-box;
+	-webkit-box-orient	:horizontal;
+	padding				: 10px;
+	
+}
+
+#main_section{
+	-webkit-box-flex : 1;
+	
+	background			: #C38D9E;
+	
+	margin				: 10px;
+	padding				: 0px;
+	border-radius		: 5px;
+}
+
+#side_news{
+	background	: #41B3A3;
+	margin		: 10px;
+	padding		: 0px;
+	width		: 200px;
+	border-radius		: 5px;
+	
+}
+
+#the_footer{
+	padding			: 10px;
+	text-align		: center;
+	background		: #E8A87C;
+	border-radius	: 5px;
+}
+
+section article{
+	background		: #FFCCCB;
+	margin			: 30px;
+	padding			: 30px;
+	border-radius	: 5px;
+	
+}
+
+aside article:hover{
+	-webkit-transform	: scale(1.1);
+}
+
+aside article{
+	background			: #FFCCCB;
+	margin				: 15px;
+	border-radius		: 5px;
+	-webkit-transition	: -webkit-transform .2s;
+
+}
+
+article footer{
+	text-align	: right;
+}
+
+p{
+	font-size	: 20px;
+	line-height	: 35px;
+	
+}
+
+article footer p{
+	color		: gray;
+	font-size	: 15px;
+	font-style	: italic;
+}
+
+a{
+	text-decoration	:none;
+		-webkit-transition	: background .2s;
+}
+
+a:hover{
+	background		: rgba(226, 125, 96, .2);
+}
+
+
+article a{ 
+	color	: #E27D60;
+	display	: inline-block;
+	padding	: 10px;
+	border-radius		: 5px;
+}
+
+aside article a{
+	width	: 150px;
+	
+	
+}
+
+#aside-title, #aside-bottom{
+	text-align	: center;
+	color		: black;
+	margin		: 0px;
+	border		: 2.5px solid #E27D60;
+	padding		: 10px;
+	border-radius		: 5px;
+}
+
+#aside-bottom h3{
+	font: normal 15px Tahoma;
+	text-align	: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

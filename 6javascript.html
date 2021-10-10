@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	
+	<style type="text/css">
+		.button {margin:0 auto; display:block; font-size:40px; margin-top:100px;}
+	
+	</style>
+</head>
+	
+
+<body>
+
+<script type="text/javascript">
+
+
+	function askUser(){
+		var p = "Enter a NUMBER, please.";
+		
+		var x = window.prompt("Enter a number.")
+		while(isNaN(x))
+			var x = window.prompt(p);
+		
+		var y = window.prompt("Enter another number");
+		while(isNaN(y))
+			var y = window.prompt(p);
+		
+		
+		document.getElementById("ADD").innerHTML = "The sum of " + x + " and " + y + " is " + (Number(x) + Number(y));
+		
+		document.getElementById("MUL").innerHTML = "<br>The product of " + x + " and " + y + " is " + (Number(x) * Number(y));
+		
+		if      (parseInt(x) > parseInt(y))
+			document.getElementById("CON").innerHTML =
+				"<br>" + x + " is bigger than " + y;
+		else if (parseInt(y) > parseInt(x))
+			document.getElementById("CON").innerHTML =
+				"<br>" + y + " is bigger than " + x;
+		else
+			document.getElementById("CON").innerHTML =
+				"<br>" + x + " is equal to " + y;
+	}
+	
+
+</script>
+
+	<h1><a href="index.html">Gabriel Medeiros</a></h1>
+	<input class="button" type="button" value="Enter numbers" onclick="askUser();">
+	
+	
+	<p id="ADD"></p>
+	<p id="MUL"></p>
+	<p id="CON"></p>
+	
+</body>
+</html>

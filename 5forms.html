@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<style type="text/css">
+		
+	form {	font-family:verdana;
+			margin:auto; width:700px;
+			border: dashed 2px gray;
+			margin-top:80px;
+			margin-bottom:120px;
+			
+		}
+	#center {text-align:center;}
+	#indent {text-indent:15px;}
+	
+	
+	
+	</style>
+</head>
+	
+
+<body>
+	<h1><a href="index.html">Gabriel Medeiros</a></h1>
+	<h2 id=center>Please fill out the form:</h2>
+	<form action="process.js" method="post">
+	<table cellspacing="10">	
+	<tr>
+		<td>First Name</td>
+		<td><input type="text" name="firstname" size="20";></input></td>
+		<td rowspan="2" id="center">How would you solve Global Warming?</td>
+	</tr>
+	<tr>
+		<td>Last Name</td>
+		<td><input type="text" name="lastname" size="20"></input></td>
+		
+	</tr>
+	<tr>
+		<td id="indent"><input type="radio" name="gender" value="male"> Male</td>
+		<td id="indent"><input type="checkbox" name="color" value="red"> Red</td>
+		<td rowspan="8"><textarea name="globalwarming" rows="20" cols="50"></textarea></td>
+	</tr>
+	<tr>
+		<td id="indent"><input type="radio" name="gender" value="female"> Female</td>
+		<td id="indent"><input type="checkbox" name="color" value="white"> White</td>
+	</tr>
+	<tr>
+		<td id="indent"><input type="radio" name="gender" value="other"> Other</td>
+		<td id="indent"><input type="checkbox" name="color" value="blue"> Blue</td>
+	</tr>	
+	<tr>
+		<td colspan="2" id="indent">Pick a cool sport:</td>
+	</tr>
+	<tr>
+		<td colspan="2" id="indent"><select name="sports">
+			<option value="smackawaka">Smackawakalakashaka</option>
+			<option value="fireball">Fire Ball</option>
+			<option value="bombtag">Bomb Tag</option>
+			<option value="beachchess">Beach Chess</option>
+			<option value="blazemaze">Blaze Maze</option>
+			<option value="airball">Air Ball</option>
+			<option value="paisho">Pai Sho</option>
+			<option value="icedodge">Ice Dodging</option>
+			<option value="earthrumble">Earth Rumble</option>
+			<option value="gliding">Gliding</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td colspan="2" id="indent">Enter a bad password:</td>
+	</tr>
+	<tr>
+		<td colspan="2" id="indent"><input type="password" name="pw" maxlength="10"></td>
+	</tr>
+	
+	<tr>
+		<td colspan="2" id="indent">Gimme a cool pic</td>
+	</tr>
+	<tr>
+		<td colspan="2" id="indent"><input type="file" name="pic"></td>
+		<td id="center"><input type="submit" value="Submit!"></td>
+	</tr>
+		
+	</table>
+
+	</form>
+	
+	<h2 id=center>Thanks bye</h2>
+</body>
+</html>
