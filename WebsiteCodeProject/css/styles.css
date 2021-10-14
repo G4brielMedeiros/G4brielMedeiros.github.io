@@ -14,13 +14,6 @@ body {
   overflow-x: hidden;
 }
 
-img {
-  width: 100%;
-}
-
-footer {
-    height: 50px;
-}
 .header {
   grid-area: header;
   text-align: center;
@@ -28,9 +21,9 @@ footer {
 }
 
 .header_text {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
+  padding-left: 60px;
+  padding-right: 60px;
+}
 
 h1 {
   color: white;
@@ -62,10 +55,8 @@ p {
   font-size: 20px;
 }
 
-.main_footer p{
-    margin-bottom: 0%;
-    color: white;
-    text-align: center;
+img {
+  width: 100%;
 }
 
 #content {
@@ -74,11 +65,6 @@ p {
   align-items: center;
   align-content: center;
   margin: 2%;
-}
-
-.content_img {
-  outline: 10px solid gray;
-  outline-offset: -10px;
 }
 
 .content1 {
@@ -91,34 +77,34 @@ p {
   grid-area: content3;
 }
 
-.final_image {
-    grid-area: final_image;
-   
-    background-color: gray;
-    text-align: center;
-    
+.content_img {
+  outline: 10px solid gray;
+  outline-offset: -10px;
+}
+
+.final_image_div {
+  grid-area: final_image;
+  background-color: gray;
+  text-align: center;
 }
 
 #final_image {
-    border:20px solid rgb(48, 48, 48);
-    border-radius: 100%;
-    width: 80%;
-    margin-top: 5%;
-    margin-bottom: 5%;
- 
-    
+  border: 20px solid rgb(48, 48, 48);
+  border-radius: 100%;
+  width: 80%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .final_content {
-    grid-area: final_content;
-    color: white;
-    
-    background-color: gray;
+  grid-area: final_content;
+  color: white;
+  background-color: gray;
 }
 
 .final_content article {
-    margin: 7%;
-    align-self: center;
+  margin: 7%;
+  align-self: center;
 }
 
 .contents {
@@ -132,25 +118,21 @@ p {
     "final_content";
 }
 
+footer {
+  height: 50px;
+}
 
+.main_footer p {
+  margin-bottom: 0%;
+  color: white;
+  text-align: center;
+}
 
 @media (min-width: 700px) {
-  .contents {
-    
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      
-      "content1   content2    content3"
-      "final_image  final_content   final_content";
-  }
-
-
-  
   .header_text {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    
   }
 
   h1 {
@@ -159,28 +141,32 @@ p {
     margin-top: auto;
     font-size: 60px;
   }
-  
+
   h2 {
     color: #5d80b6;
     font-size: 20px;
     margin-top: 0%;
-
-   
-    
   }
 
   h4 {
-
-
     text-align: left;
   }
 
-  article, p, strong, em {
-      text-align: left;
+  article,
+  p,
+  strong,
+  em {
+    text-align: left;
+  }
+
+  .contents {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "content1   content2    content3"
+      "final_image  final_content   final_content";
   }
 
   #content {
-      margin: 10%;
+    margin: 10%;
   }
-
 }
