@@ -1,0 +1,179 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+html,
+body {
+  background-color: rgb(63, 63, 63);
+  margin: 0%;
+
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+    height: 50px;
+}
+.header {
+  grid-area: header;
+  text-align: center;
+  position: relative;
+}
+
+.header_text {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+h1 {
+  color: white;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  font-size: 40px;
+}
+
+h2 {
+  color: white;
+  font-size: small;
+  margin-top: 0%;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+.main_footer p{
+    margin-bottom: 0%;
+    color: white;
+    text-align: center;
+}
+
+#content {
+  text-align: center;
+  color: white;
+  align-items: center;
+  align-content: center;
+  margin: 2%;
+}
+
+.content_img {
+  outline: 10px solid gray;
+  outline-offset: -10px;
+}
+
+.content1 {
+  grid-area: content1;
+}
+.content2 {
+  grid-area: content2;
+}
+.content3 {
+  grid-area: content3;
+}
+
+.final_image {
+    grid-area: final_image;
+   
+    background-color: gray;
+    text-align: center;
+    
+}
+
+#final_image {
+    border:20px solid rgb(48, 48, 48);
+    border-radius: 100%;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+ 
+    
+}
+
+.final_content {
+    grid-area: final_content;
+    color: white;
+    
+    background-color: gray;
+}
+
+.final_content article {
+    margin: 7%;
+    align-self: center;
+}
+
+.contents {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content1"
+    "content2"
+    "content3"
+    "final_image"
+    "final_content";
+}
+
+
+
+@media (min-width: 700px) {
+  .contents {
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      
+      "content1   content2    content3"
+      "final_image  final_content   final_content";
+  }
+
+
+  
+  .header_text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    
+  }
+
+  h1 {
+    color: green;
+    margin-bottom: 0%;
+    margin-top: auto;
+    font-size: 60px;
+  }
+  
+  h2 {
+    color: brown;
+    font-size: 20px;
+    margin-top: 0%;
+    
+  }
+
+  h4 {
+    font-size: 40px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: left;
+  }
+
+  article, p, strong, em {
+      text-align: left;
+  }
+
+  #content {
+      margin: 10%;
+  }
+
+}
