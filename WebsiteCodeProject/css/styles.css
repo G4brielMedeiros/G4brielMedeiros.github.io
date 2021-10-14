@@ -154,16 +154,18 @@ p {
   }
 
   h1 {
-    color: green;
+    color: #101e5a;
     margin-bottom: 0%;
     margin-top: auto;
     font-size: 60px;
   }
   
   h2 {
-    color: brown;
+    color: #5d80b6;
     font-size: 20px;
     margin-top: 0%;
+
+   
     
   }
 
